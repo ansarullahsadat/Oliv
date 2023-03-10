@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,12 +19,13 @@
 
     <title>Øliv</title>
   </head>
-  <body class="bg-slate-100 px-4">
-    <header class="container mx-auto">
+  <body class="bg-slate-100 relative">
+    <header class="mx-auto" id="header">
       <nav
-        class="flex items-center justify-between font-semibold text-slate-600 pt-6 pb-4 border-b border-slate-300 text-lg"
+        class="flex items-center justify-between font-semibold text-slate-600 pt-6 pb-4 border-b border-slate-300 text-lg container mx-auto px-4"
+        id="navbar"
       >
-        <div class="flex items-center gap-1 lg:gap-2 text-lg md:text-xl">
+        <div class="flex items-center lg:gap-2 text-lg md:text-xl">
           <img
             src="https://cdn.iconscout.com/icon/premium/png-256-thumb/fingerprint-1773120-1509062.png?f=webp&w=128"
             alt="logo"
@@ -72,9 +73,9 @@
             </li>
 
             <button
-              class="py-2.5 px-8 border-2 rounded-3xl hover:-translate-y-1 hover:bg-[#2e3336] hover:text-white transition-all shadow-xl hover:border-[transparent] hover:shadow-[#2e3336]/30"
+              class="border-2 rounded-3xl hover:-translate-y-1 hover:bg-[#2e3336] hover:text-white transition-all shadow-xl hover:border-[transparent] hover:shadow-[#2e3336]/30"
             >
-              <a href="#contact">Lets talk</a>
+              <a href="#contact" class="py-2.5 px-8 inline-block">Lets talk</a>
             </button>
           </ul>
         </div>
@@ -115,840 +116,856 @@
       </nav>
     </header>
 
-    <section class="container mx-auto mt-20">
-      <div
-        class="md:px-12 flex flex-col items-center md:items-start justify-center"
-      >
-        <h1
-          class="text-4xl md:text-7xl mb-6 font-mdeium md:w-[48rem] text-center md:text-left leading-relaxed"
-        >
-          Building Brands, One Success Story at a Time.
-        </h1>
-
-        <p
-          class="text-lg md:text-xl mb-10 md:w-[32rem] text-center md:text-left"
-        >
-          Create a Brand That Resonates: We Can Help You Define and Communicate
-          Your Unique Message.
-        </p>
-
-        <button
-          class="bg-[#2e3336] py-3 px-8 text-white rounded-3xl hover:-translate-y-0.5 hover:bg-[#353a3d] shadow-xl hover:shadow-[#2e3336]/30 transition-all"
-        >
-          <a href="#">Our Services</a>
-        </button>
-
+    <main class="px-4">
+      <section class="container mx-auto mt-20" id="section__hero">
         <div
-          class="grid grid-cols-2 md:grid-cols-3 items-center lg:grid-cols-6 gap-8 mt-24 md:justify-between md:w-full text-center w-fit mx-auto"
+          class="md:px-12 flex flex-col items-center md:items-start justify-center"
         >
-          <img
-            src="/logos/google.svg"
-            alt="Logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-          <img
-            src="/logos/youtube.svg"
-            alt="logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-          <img
-            src="/logos/instagram.svg"
-            alt="logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-          <img
-            src="/logos/twitter.svg"
-            alt="logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-          <img
-            src="/logos/uber.svg"
-            alt="logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-          <img
-            src="/logos/discord.svg"
-            alt="logo"
-            class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-          />
-        </div>
-      </div>
+          <h1
+            class="text-4xl md:text-7xl mb-6 font-mdeium md:w-[48rem] text-center md:text-left leading-relaxed"
+          >
+            Building Brands, One Success Story at a Time.
+          </h1>
 
-      <div class="flex flex-wrap gap-8 items-center mt-20 mb-10 justify-center">
-        <div
-          class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
-        >
-          <h3 class="text-2xl font-normal mb-3">Brand Strtegy</h3>
-
-          <p class="text-slate-500 text-base mb-4">
-            We help businesses define their unique brand message and branding
-            positioning
+          <p
+            class="text-lg md:text-xl mb-10 md:w-[32rem] text-center md:text-left"
+          >
+            Create a Brand That Resonates: We Can Help You Define and
+            Communicate Your Unique Message.
           </p>
 
           <button
-            class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            class="bg-[#2e3336] py-3 px-8 text-white rounded-3xl hover:-translate-y-0.5 hover:bg-[#353a3d] shadow-xl hover:shadow-[#2e3336]/30 transition-all"
           >
-            <a href="#">About Strategy</a>
+            <a href="#">Our Services</a>
+          </button>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 items-center lg:grid-cols-6 gap-8 mt-24 md:justify-between md:w-full text-center w-fit mx-auto"
+          >
+            <img
+              src="/logos/google.svg"
+              alt="Logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+            <img
+              src="/logos/youtube.svg"
+              alt="logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+            <img
+              src="/logos/instagram.svg"
+              alt="logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+            <img
+              src="/logos/twitter.svg"
+              alt="logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+            <img
+              src="/logos/uber.svg"
+              alt="logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+            <img
+              src="/logos/discord.svg"
+              alt="logo"
+              class="w-12 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-wrap gap-8 items-center mt-20 mb-10 justify-center"
+        >
+          <div
+            class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
+          >
+            <h3 class="text-2xl font-normal mb-3">Brand Strtegy</h3>
+
+            <p class="text-slate-500 text-base mb-4">
+              We help businesses define their unique brand message and branding
+              positioning
+            </p>
+
+            <button
+              class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            >
+              <a href="#">About Strategy</a>
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
+          >
+            <h3 class="text-2xl font-normal mb-3">Visual identity</h3>
+
+            <p class="text-slate-500 text-base mb-4">
+              We create visual elements such as logos, packaging, and marketing
+              materials for your brand.
+            </p>
+
+            <button
+              class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            >
+              <a href="#">About Identity</a>
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
+          >
+            <h3 class="text-2xl font-normal mb-3">Digital Marketing</h3>
+
+            <p class="text-slate-500 text-base mb-4">
+              We help businesses to promote their brand online and create
+              engagin digital experiences
+            </p>
+
+            <button
+              class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            >
+              <a href="#">About Marketing</a>
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
+          >
+            <h3 class="text-2xl font-normal mb-3">Brand Management</h3>
+
+            <p class="text-slate-500 text-base mb-4">
+              We help businesses to implement their brand across all touchpoints
+              and ensure consistency
+            </p>
+
+            <button
+              class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            >
+              <a href="#">About Management</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- work -->
+      <section class="container mx-auto mt-20" id="work">
+        <div class="text-xs uppercase font-medium">Our work</div>
+
+        <div
+          class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
+        >
+          <h2 class="text-3xl font-normal">Selected Work</h2>
+          <button
+            class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
+          >
+            <a href="https://www.icodethis.com/Ansarullah">All Work</a>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
+          <!-- 1 -->
+          <div>
+            <div
+              class="w-full h-[28rem] rounded-md overflow-hidden cursor-pointer"
+            >
+              <img
+                src="/img/img.jpg"
+                alt="paper"
+                class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
+              />
+            </div>
+
+            <div class="flex items-center justify-between my-4">
+              <p class="text-xl">Invision Studio</p>
+              <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
+                >Marketing</a
+              >
+            </div>
+          </div>
+          <!-- 2 -->
+          <div>
+            <div
+              class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
+            >
+              <img
+                src="/img/img-2.jpg"
+                alt="color-types"
+                class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
+              />
+            </div>
+            <div class="flex items-center justify-between my-4">
+              <p class="text-xl">Square Media</p>
+              <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
+                >Branding</a
+              >
+            </div>
+          </div>
+          <!-- 3 -->
+          <div>
+            <div
+              class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
+            >
+              <img
+                src="/img/img-3.jpg"
+                alt="wall papper"
+                class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
+              />
+            </div>
+
+            <div class="flex items-center justify-between my-4">
+              <p class="text-xl">Vision Design</p>
+              <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
+                >Social Media</a
+              >
+            </div>
+          </div>
+          <!-- 4 -->
+          <div>
+            <div
+              class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
+            >
+              <img
+                src="/img/img-4.jpg"
+                alt="Design book"
+                class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
+              />
+            </div>
+
+            <div class="flex items-center justify-between my-4">
+              <p class="text-xl">Design Bors</p>
+              <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
+                >Branding</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- values -->
+      <section class="container mx-auto mt-20" id="Services">
+        <div class="text-xs uppercase font-medium border-b pb-2">
+          Our Values
+        </div>
+
+        <div
+          class="flex items-center flex-wrap justify-center gap-6 lg:justify-start mt-12"
+        >
+          <!-- 1 -->
+          <div
+            class="bg-slate-200/50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-sm">Services</span>
+            <h4 class="text-2xl mt-3">Our Approach to Branding</h4>
+            <button
+              class="py-2.5 px-6 rounded-3xl hover:-translate-y-0.5 bg-[#2e3336] text-white transition-all shadow-xl hover:shadow-[#2e3336]/30 absolute bottom-6 left-6 text-lg flex items-center gap-1"
+            >
+              <a href="#">About Øliv</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-green-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-xs"
+              >Helping Brands <br />
+              stand out</span
+            >
+
+            <p class="absolute bottom-6 left-6 text-2xl">
+              Bold Moves,<br />Big Impact.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div
+            class="bg-orange-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-xs"
+              >How we work <br />
+              with our clients</span
+            >
+
+            <p class="absolute bottom-6 left-6 text-2xl">
+              Honestly is the<br />best Policy.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center flex-wrap justify-center gap-6 lg:justify-end mt-12"
+        >
+          <!-- 1 -->
+          <div
+            class="bg-slate-200/20 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-xs"
+              >Collaboration is key</span
+            >
+
+            <p class="absolute bottom-6 left-6 text-2xl">
+              Building Strong<br />Partnerships.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-amber-900/20 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-xs">Our Approach</span>
+
+            <p class="absolute bottom-6 left-6 text-2xl">
+              Achieving <br />
+              Real Results.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div
+            class="bg-yellow-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          >
+            <span class="uppercase font-medium text-xs">Our Philosphy</span>
+
+            <p class="absolute bottom-6 left-6 text-2xl">
+              Building Trust. <br />
+              Not Pitching.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 mt-20 items-center">
+          <h3
+            class="text-4xl md:col-span-2 md:w-[38rem] mb-4 mx-auto md:-translate-x-20 leading-10"
+          >
+            Crafting Exceptional Digital Experiences across All Platforms: Our
+            Goal at Øliv
+          </h3>
+          <p class="text-sm md:w-[24rem] md:ml-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
+            dicta atque quidem porro esse adipisci totam consectetur dolorum,
+            dolor recusandae cumque ad qm quisquam reiciendis sunt voluptatum?
+          </p>
+
+          <p class="text-sm md:w-[24rem] md:mr-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
+            dicta atque quidem porro esse adipisci totam consectetur dolorum,
+            dolor recusandae cueiciendis sunt voluptatum?
+          </p>
+
+          <p class="text-sm md:w-[24rem] md:ml-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
+            dicta atque quidem porro esse adipisci totam consectetur dolorum,
+            dolor recusa
+          </p>
+
+          <p class="text-sm md:w-[24rem] md:mr-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
+            dicta atque quidem porro esor ree cumque ad quod nobis accusantium
+            quisquam reiciendis sunt voluptatum?
+          </p>
+        </div>
+      </section>
+
+      <!-- team -->
+      <section class="container mx-auto mt-20" id="about">
+        <div class="text-xs uppercase font-medium border-b pb-2">Our Team</div>
+
+        <div
+          class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
+        >
+          <h2 class="text-3xl font-normal">Our Team of Experts</h2>
+          <button
+            class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
+          >
+            <a href="#">About us</a>
           </button>
         </div>
 
         <div
-          class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-6 mt-16 mb-4 justify-center md:justify-start"
         >
-          <h3 class="text-2xl font-normal mb-3">Visual identity</h3>
+          <!-- 1 -->
+          <div
+            class="bg-slate-200 p-6 w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md relative"
+          >
+            <span class="text-xs text-slate-500 mb-4 inline-block uppercase"
+              >Join the team</span
+            >
+            <h4 class="text-xl mb-2">Want to shape the future of branding?</h4>
 
-          <p class="text-slate-500 text-base mb-4">
-            We create visual elements such as logos, packaging, and marketing
-            materials for your brand.
+            <p class="text-sm text-slate-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+
+            <button
+              class="py-2 px-3.5 rounded-3xl hover:-translate-y-0.5 bg-[#2e3336] text-white transition-all shadow-xl hover:shadow-[#2e3336]/30 absolute bottom-4 left-4 text-sm md:text-xl"
+            >
+              <a href="#">Apply Now</a>
+            </button>
+          </div>
+          <!-- 2 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/LWkFHEGpleE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fGJsYWNrJTIwZ2lybCUyMHByb2ZpbGV8ZW58MHx8fHwxNjc4MTEwMjg5&force=true"
+                alt="Annette"
+                class="w-full h-full object-top object-cover"
+              />
+            </div>
+            <div
+              class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
+            >
+              <span class="text-sm">Annette Black</span>
+              <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
+                >cto</span
+              >
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/17qa33WJ6zI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDN8fGJsYWNrJTIwbWFuJTIwdXNlcnxlbnwwfHx8fDE2NzgxMTA1MDk&force=true"
+                alt="Devon"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
+            >
+              <span class="text-sm">Devon lane</span>
+              <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
+                >Design</span
+              >
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjl8fG1hbiUyMHVzZXJzfGVufDB8fHx8MTY3ODExMDYyOA&force=true"
+                alt="Chris"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
+            >
+              <span class="text-sm">Chris Watson</span>
+              <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
+                >Design</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-32 grid md:grid-cols-2 gap-8">
+          <div class="">
+            <img
+              src="/logos/google.svg"
+              alt="Logo"
+              class="w-8 object-cover cursor-pointer hover:-translate-y-1 transition-all md:mx-auto"
+            />
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h3 class="text-2xl">
+              "We couldn't be happier with the branding strategy devoloped."
+            </h3>
+
+            <p class="leading-relaxed text-sm md:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+              necessitatibus aliquid odit asperiores error harum enim
+              repellendus
+            </p>
+
+            <p class="leading-relaxed text-sm md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              beatae quibusdam temporibus nihil ad, vitae voluptatem dolor
+              placeat expedita nam autem am
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="/logos/youtube.svg"
+              alt="logo"
+              class="w-8 object-cover cursor-pointer hover:-translate-y-1 transition-all md:mx-auto mt-8 md:mt-0"
+            />
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h3 class="text-2xl">
+              "We couldn't be happier with the branding strategy devoloped."
+            </h3>
+
+            <p class="leading-relaxed text-sm md:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+              necessitatibus aliquid odit asperiores error harum enim
+              repellendus
+            </p>
+
+            <p class="leading-relaxed text-sm md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              beatae quibusdam temporibus nihil ad, vitae voluptatem dolor
+              placeat expedita nam autem am
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="container mt-32 mx-auto" id="contact">
+        <div class="text-xs uppercase font-medium border-b pb-2">Contact</div>
+        <div
+          class="bg-slate-200 px-6 py-10 md:py-20 md:px-12 mt-12 grid justify-center gap-4 rounded-lg text-center md:text-left"
+        >
+          <h2 class="text-3xl md:text-5xl leading-tight lg:w-[50rem]">
+            Let's start building your brand's unique story together.
+          </h2>
+
+          <p class="md:text-lg">
+            Want to see what a diffrent a story brand can <br />
+            make? Request a consultation today.
           </p>
 
           <button
-            class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
+            class="py-2.5 px-6 border-2 rounded-3xl mx-auto md:mx-0 hover:-translate-y-1 mt-2 bg-[#2e3336] w-fit text-white transition-all font-thin shadow-xl hover:border-[transparent] hover:shadow-[#2e3336]/30 flex items-center gap-1"
           >
-            <a href="#">About Identity</a>
-          </button>
-        </div>
-
-        <div
-          class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
-        >
-          <h3 class="text-2xl font-normal mb-3">Digital Marketing</h3>
-
-          <p class="text-slate-500 text-base mb-4">
-            We help businesses to promote their brand online and create engagin
-            digital experiences
-          </p>
-
-          <button
-            class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
-          >
-            <a href="#">About Marketing</a>
-          </button>
-        </div>
-
-        <div
-          class="bg-gray-200/75 py-8 px-5 -rotate-6 hover:rotate-0 transition-all w-[20rem] cursor-pointer"
-        >
-          <h3 class="text-2xl font-normal mb-3">Brand Management</h3>
-
-          <p class="text-slate-500 text-base mb-4">
-            We help businesses to implement their brand across all touchpoints
-            and ensure consistency
-          </p>
-
-          <button
-            class="text-sm border-b border-[#2e3336] py-1 font-medium hover:border-[transparent] hover:translate-x-1 transition-all"
-          >
-            <a href="#">About Management</a>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- work -->
-    <section class="container mx-auto mt-20" id="work">
-      <div class="text-xs uppercase font-medium">Our work</div>
-
-      <div
-        class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
-      >
-        <h2 class="text-3xl font-normal">Selected Work</h2>
-        <button
-          class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
-        >
-          <a href="https://www.icodethis.com/Ansarullah">All Work</a>
-        </button>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
-        <!-- 1 -->
-        <div>
-          <div
-            class="w-full h-[28rem] rounded-md overflow-hidden cursor-pointer"
-          >
-            <img
-              src="/img/img.jpg"
-              alt="paper"
-              class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
-            />
-          </div>
-
-          <div class="flex items-center justify-between my-4">
-            <p class="text-xl">Invision Studio</p>
-            <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
-              >Marketing</a
-            >
-          </div>
-        </div>
-        <!-- 2 -->
-        <div>
-          <div
-            class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
-          >
-            <img
-              src="/img/img-2.jpg"
-              alt="color-types"
-              class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
-            />
-          </div>
-          <div class="flex items-center justify-between my-4">
-            <p class="text-xl">Square Media</p>
-            <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
-              >Branding</a
-            >
-          </div>
-        </div>
-        <!-- 3 -->
-        <div>
-          <div
-            class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
-          >
-            <img
-              src="/img/img-3.jpg"
-              alt="wall papper"
-              class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
-            />
-          </div>
-
-          <div class="flex items-center justify-between my-4">
-            <p class="text-xl">Vision Design</p>
-            <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
-              >Social Media</a
-            >
-          </div>
-        </div>
-        <!-- 4 -->
-        <div>
-          <div
-            class="w-full h-[28rem] overflow-hidden rounded-md cursor-pointer"
-          >
-            <img
-              src="/img/img-4.jpg"
-              alt="Design book"
-              class="object-cover w-full h-full hover:scale-105 transition-all duration-300"
-            />
-          </div>
-
-          <div class="flex items-center justify-between my-4">
-            <p class="text-xl">Design Bors</p>
-            <a href="#" class="border py-1 px-2 rounded-3xl text-sm"
-              >Branding</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- values -->
-    <section class="container mx-auto mt-20" id="Services">
-      <div class="text-xs uppercase font-medium border-b pb-2">Our Values</div>
-
-      <div
-        class="flex items-center flex-wrap justify-center gap-6 lg:justify-start mt-12"
-      >
-        <!-- 1 -->
-        <div
-          class="bg-slate-200/50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
-        >
-          <span class="uppercase font-medium text-sm">Services</span>
-          <h4 class="text-2xl mt-3">Our Approach to Branding</h4>
-          <button
-            class="py-2.5 px-6 rounded-3xl hover:-translate-y-0.5 bg-[#2e3336] text-white transition-all shadow-xl hover:shadow-[#2e3336]/30 absolute bottom-6 left-6 text-lg flex items-center gap-1"
-          >
-            <a href="#">About Øliv</a>
+            <a href="#">Get in touch</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="w-4 h-4"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
               />
             </svg>
           </button>
         </div>
-        <!-- 2 -->
+      </section>
+
+      <!-- Blog -->
+      <section class="container mx-auto mt-32" id="Blog">
+        <div class="text-xs uppercase font-medium border-b pb-2">Blog</div>
+
         <div
-          class="bg-green-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
+          class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
         >
-          <span class="uppercase font-medium text-xs"
-            >Helping Brands <br />
-            stand out</span
-          >
-
-          <p class="absolute bottom-6 left-6 text-2xl">
-            Bold Moves,<br />Big Impact.
-          </p>
-        </div>
-        <!-- 3 -->
-        <div
-          class="bg-orange-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
-        >
-          <span class="uppercase font-medium text-xs"
-            >How we work <br />
-            with our clients</span
-          >
-
-          <p class="absolute bottom-6 left-6 text-2xl">
-            Honestly is the<br />best Policy.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="flex items-center flex-wrap justify-center gap-6 lg:justify-end mt-12"
-      >
-        <!-- 1 -->
-        <div
-          class="bg-slate-200/20 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
-        >
-          <span class="uppercase font-medium text-xs"
-            >Collaboration is key</span
-          >
-
-          <p class="absolute bottom-6 left-6 text-2xl">
-            Building Strong<br />Partnerships.
-          </p>
-        </div>
-        <!-- 2 -->
-        <div
-          class="bg-amber-900/20 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
-        >
-          <span class="uppercase font-medium text-xs">Our Approach</span>
-
-          <p class="absolute bottom-6 left-6 text-2xl">
-            Achieving <br />
-            Real Results.
-          </p>
-        </div>
-        <!-- 3 -->
-        <div
-          class="bg-yellow-50 p-8 w-[18rem] h-[20rem] relative rounded-md shadow-lg shadow-slate-400/50 hover:-translate-y-1 cursor-pointer transition-all"
-        >
-          <span class="uppercase font-medium text-xs">Our Philosphy</span>
-
-          <p class="absolute bottom-6 left-6 text-2xl">
-            Building Trust. <br />
-            Not Pitching.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-4 mt-20 items-center">
-        <h3
-          class="text-4xl md:col-span-2 md:w-[38rem] mb-4 mx-auto md:-translate-x-20 leading-10"
-        >
-          Crafting Exceptional Digital Experiences across All Platforms: Our
-          Goal at Øliv
-        </h3>
-        <p class="text-sm md:w-[24rem] md:ml-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
-          dicta atque quidem porro esse adipisci totam consectetur dolorum,
-          dolor recusandae cumque ad qm quisquam reiciendis sunt voluptatum?
-        </p>
-
-        <p class="text-sm md:w-[24rem] md:mr-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
-          dicta atque quidem porro esse adipisci totam consectetur dolorum,
-          dolor recusandae cueiciendis sunt voluptatum?
-        </p>
-
-        <p class="text-sm md:w-[24rem] md:ml-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
-          dicta atque quidem porro esse adipisci totam consectetur dolorum,
-          dolor recusa
-        </p>
-
-        <p class="text-sm md:w-[24rem] md:mr-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos
-          dicta atque quidem porro esor ree cumque ad quod nobis accusantium
-          quisquam reiciendis sunt voluptatum?
-        </p>
-      </div>
-    </section>
-
-    <!-- team -->
-    <section class="container mx-auto mt-20" id="about">
-      <div class="text-xs uppercase font-medium border-b pb-2">Our Team</div>
-
-      <div
-        class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
-      >
-        <h2 class="text-3xl font-normal">Our Team of Experts</h2>
-        <button
-          class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
-        >
-          <a href="#">About us</a>
-        </button>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-6 mt-16 mb-4 justify-center md:justify-start"
-      >
-        <!-- 1 -->
-        <div
-          class="bg-slate-200 p-6 w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md relative"
-        >
-          <span class="text-xs text-slate-500 mb-4 inline-block uppercase"
-            >Join the team</span
-          >
-          <h4 class="text-xl mb-2">Want to shape the future of branding?</h4>
-
-          <p class="text-sm text-slate-500">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </p>
-
+          <h2 class="text-3xl font-normal">Insights on Branding</h2>
           <button
-            class="py-2 px-3.5 rounded-3xl hover:-translate-y-0.5 bg-[#2e3336] text-white transition-all shadow-xl hover:shadow-[#2e3336]/30 absolute bottom-4 left-4 text-sm md:text-xl"
+            class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
           >
-            <a href="#">Apply Now</a>
+            <a href="#">See all</a>
           </button>
         </div>
-        <!-- 2 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/LWkFHEGpleE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTZ8fGJsYWNrJTIwZ2lybCUyMHByb2ZpbGV8ZW58MHx8fHwxNjc4MTEwMjg5&force=true"
-              alt="Annette"
-              class="w-full h-full object-top object-cover"
-            />
-          </div>
-          <div
-            class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
-          >
-            <span class="text-sm">Annette Black</span>
-            <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
-              >cto</span
-            >
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/17qa33WJ6zI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDN8fGJsYWNrJTIwbWFuJTIwdXNlcnxlbnwwfHx8fDE2NzgxMTA1MDk&force=true"
-              alt="Devon"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
-          >
-            <span class="text-sm">Devon lane</span>
-            <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
-              >Design</span
-            >
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] md:h-[30rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjl8fG1hbiUyMHVzZXJzfGVufDB8fHx8MTY3ODExMDYyOA&force=true"
-              alt="Chris"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            class="flex items-center justify-between mt-2 w-[18rem] mx-auto md:mx-0 md:w-full"
-          >
-            <span class="text-sm">Chris Watson</span>
-            <span class="uppercase border py-1 px-2 text-xs rounded-3xl"
-              >Design</span
-            >
-          </div>
-        </div>
-      </div>
 
-      <div class="mt-32 grid md:grid-cols-2 gap-8">
-        <div class="">
-          <img
-            src="/logos/google.svg"
-            alt="Logo"
-            class="w-8 object-cover cursor-pointer hover:-translate-y-1 transition-all md:mx-auto"
-          />
-        </div>
-
-        <div class="flex flex-col gap-4">
-          <h3 class="text-2xl">
-            "We couldn't be happier with the branding strategy devoloped."
-          </h3>
-
-          <p class="leading-relaxed text-sm md:text-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-            necessitatibus aliquid odit asperiores error harum enim repellendus
-          </p>
-
-          <p class="leading-relaxed text-sm md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            beatae quibusdam temporibus nihil ad, vitae voluptatem dolor placeat
-            expedita nam autem am
-          </p>
-        </div>
-
-        <div>
-          <img
-            src="/logos/youtube.svg"
-            alt="logo"
-            class="w-8 object-cover cursor-pointer hover:-translate-y-1 transition-all md:mx-auto mt-8 md:mt-0"
-          />
-        </div>
-
-        <div class="flex flex-col gap-4">
-          <h3 class="text-2xl">
-            "We couldn't be happier with the branding strategy devoloped."
-          </h3>
-
-          <p class="leading-relaxed text-sm md:text-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-            necessitatibus aliquid odit asperiores error harum enim repellendus
-          </p>
-
-          <p class="leading-relaxed text-sm md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            beatae quibusdam temporibus nihil ad, vitae voluptatem dolor placeat
-            expedita nam autem am
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="container mt-32 mx-auto" id="contact">
-      <div class="text-xs uppercase font-medium border-b pb-2">Contact</div>
-      <div
-        class="bg-slate-200 px-6 py-10 md:py-20 md:px-12 mt-12 grid justify-center gap-4 rounded-lg text-center md:text-left"
-      >
-        <h2 class="text-3xl md:text-5xl leading-tight lg:w-[50rem]">
-          Let's start building your brand's unique story together.
-        </h2>
-
-        <p class="md:text-lg">
-          Want to see what a diffrent a story brand can <br />
-          make? Request a consultation today.
-        </p>
-
-        <button
-          class="py-2.5 px-6 border-2 rounded-3xl mx-auto md:mx-0 hover:-translate-y-1 mt-2 bg-[#2e3336] w-fit text-white transition-all font-thin shadow-xl hover:border-[transparent] hover:shadow-[#2e3336]/30 flex items-center gap-1"
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-10 md:gap-6 mt-16 mb-4 justify-center md:justify-start"
         >
-          <a href="#">Get in touch</a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-4 h-4"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-            />
-          </svg>
-        </button>
-      </div>
-    </section>
+          <!-- 1 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/K6amaQsZxR0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OTh8fGJvb2slMjBhbmQlMjBib290bGV8ZW58MHx8fHwxNjc4MjA0Mzg1&force=true"
+                alt="Annette"
+                class="w-full h-full object-top object-cover hover:scale-105 transition-all"
+              />
+            </div>
+            <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
+              <p class="text-black/90">
+                The Importance of a Strong Brand positioning
+              </p>
 
-    <!-- Blog -->
-    <section class="container mx-auto mt-32" id="Blog">
-      <div class="text-xs uppercase font-medium border-b pb-2">Blog</div>
+              <a
+                href="#"
+                class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/R69UETPVPt0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
+                alt="Annette"
+                class="w-full h-full object-top object-cover hover:scale-105 transition-all"
+              />
+            </div>
+            <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
+              <p class="text-black/90">
+                Creating a Consistent Brand identity Across All Touchpoints
+              </p>
 
-      <div
-        class="flex items-center justify-between mt-8 flex-col gap-6 md:flex-row"
-      >
-        <h2 class="text-3xl font-normal">Insights on Branding</h2>
-        <button
-          class="py-2 px-4 border border-black rounded-3xl text-base md:text-lg"
+              <a
+                href="#"
+                class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/wROGnRAuqNM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8N3x8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
+                alt="Devon"
+                class="w-full h-full object-cover hover:scale-105 transition-all"
+              />
+            </div>
+            <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
+              <p class="text-black/90">
+                The Role of Market Research in Branding Strategy
+              </p>
+
+              <a
+                href="#"
+                class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="">
+            <div
+              class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="https://unsplash.com/photos/1B8on8_xnuM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
+                alt="Chris"
+                class="w-full h-full object-cover hover:scale-105 transition-all"
+              />
+            </div>
+            <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
+              <p class="text-black/90">
+                The Impact of social Media on Branding
+              </p>
+
+              <a
+                href="#"
+                class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20 gap-y-16 lg:gap-4 mb-12"
         >
-          <a href="#">See all</a>
-        </button>
-      </div>
+          <div class="flex gap-2 flex-col items-center md:items-start">
+            <div class="flex gap-2 items-center mb-12">
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/fingerprint-1773120-1509062.png?f=webp&w=128"
+                alt="logo"
+                class="w-8 h-8 cursor-pointer"
+              />
+              <span class="text-lg font-medium">Øliv</span>
+            </div>
 
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-10 md:gap-6 mt-16 mb-4 justify-center md:justify-start"
-      >
-        <!-- 1 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/K6amaQsZxR0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OTh8fGJvb2slMjBhbmQlMjBib290bGV8ZW58MHx8fHwxNjc4MjA0Mzg1&force=true"
-              alt="Annette"
-              class="w-full h-full object-top object-cover hover:scale-105 transition-all"
-            />
+            <div class="flex items-center gap-6">
+              <img
+                src="/logos/instagram.svg"
+                alt="logo"
+                class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+              />
+              <img
+                src="/logos/twitter.svg"
+                alt="logo"
+                class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+              />
+              <img
+                src="/logos/discord.svg"
+                alt="logo"
+                class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
+              />
+            </div>
           </div>
-          <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
-            <p class="text-black/90">
-              The Importance of a Strong Brand positioning
-            </p>
+          <div class="">
+            <ul
+              class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
+            >
+              <li
+                class="mb-10 border-b w-full md:w-fit text-center md:text-left border-slate-300 pb-2"
+              >
+                <a href="#">Pages</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Services</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Jobs</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Contact</a>
+              </li>
 
+              <button
+                class="py-2.5 px-8 border-2 rounded-3xl hover:-translate-y-1 bg-[#2e3336] text-white w-fit transition-all shadow-xl text-base hover:border-[transparent] hover:shadow-[#2e3336]/30"
+              >
+                <a href="https://www.icodethis.com/Ansarullah"
+                  >More Templates</a
+                >
+              </button>
+            </ul>
+          </div>
+          <div>
+            <ul
+              class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
+            >
+              <li
+                class="mb-10 border-b border-slate-300 pb-2 w-full md:w-fit text-center md:text-left"
+              >
+                <a href="#" class="uppercase">Cms</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Work</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Work Single</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Blog</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Blob Post</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Shop</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Shop Single</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul
+              class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
+            >
+              <li
+                class="mb-10 border-b border-slate-300 pb-2 w-full md:w-fit text-center md:text-left"
+              >
+                <a href="#" class="uppercase">Utility Pages</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">404 Error page</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Passport Protected</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Styleguide</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Licensing</a>
+              </li>
+              <li
+                class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
+              >
+                <a href="#">Changelog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 border-t border-slate-300 flex flex-col gap-6 md:flex-row items-center justify-between pt-12 pb-16"
+        >
+          <div class="text-slate-500 text-center md:text-left">
+            &copy;2023 Made by
+            <a
+              href="https://twitter.com/AnsarullahSadat"
+              class="text-black border-b border-black hover:border-transparent"
+              >Ansarullah</a
+            >
+            Powored by
             <a
               href="#"
-              class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
-              >Read more</a
+              class="text-black border-b border-black hover:border-transparent"
+              >Webflow</a
+            >
+          </div>
+          <div class="flex items-center gap-4 text-slate-500">
+            <a href="#" class="hover:-translate-y-0.5 transition-all"
+              >Privacy</a
+            >
+            <a href="#" class="hover:-translate-y-0.5 transition-all"
+              >Imprint</a
             >
           </div>
         </div>
-        <!-- 2 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/R69UETPVPt0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
-              alt="Annette"
-              class="w-full h-full object-top object-cover hover:scale-105 transition-all"
-            />
-          </div>
-          <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
-            <p class="text-black/90">
-              Creating a Consistent Brand identity Across All Touchpoints
-            </p>
-
-            <a
-              href="#"
-              class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/wROGnRAuqNM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8N3x8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
-              alt="Devon"
-              class="w-full h-full object-cover hover:scale-105 transition-all"
-            />
-          </div>
-          <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
-            <p class="text-black/90">
-              The Role of Market Research in Branding Strategy
-            </p>
-
-            <a
-              href="#"
-              class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="">
-          <div
-            class="w-[18rem] mx-auto md:mx-0 md:w-full h-[20rem] rounded-md bg-slate-200 overflow-hidden"
-          >
-            <img
-              src="https://unsplash.com/photos/1B8on8_xnuM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8Ym9vdGxlfGVufDB8fHx8MTY3ODIwNDQ0MA&force=true"
-              alt="Chris"
-              class="w-full h-full object-cover hover:scale-105 transition-all"
-            />
-          </div>
-          <div class="flex flex-col mt-2 w-[18rem] mx-auto md:mx-0 md:w-full">
-            <p class="text-black/90">The Impact of social Media on Branding</p>
-
-            <a
-              href="#"
-              class="border-b hover:border-none hover:translate-x-1 transition-all border-black text-sm w-fit mt-2"
-              >Read more</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20 gap-y-16 lg:gap-4 mb-12"
-      >
-        <div class="flex gap-2 flex-col items-center md:items-start">
-          <div class="flex gap-2 items-center mb-12">
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/fingerprint-1773120-1509062.png?f=webp&w=128"
-              alt="logo"
-              class="w-8 h-8 cursor-pointer"
-            />
-            <span class="text-lg font-medium">Øliv</span>
-          </div>
-
-          <div class="flex items-center gap-6">
-            <img
-              src="/logos/instagram.svg"
-              alt="logo"
-              class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-            />
-            <img
-              src="/logos/twitter.svg"
-              alt="logo"
-              class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-            />
-            <img
-              src="/logos/discord.svg"
-              alt="logo"
-              class="w-6 object-cover cursor-pointer hover:-translate-y-1 transition-all"
-            />
-          </div>
-        </div>
-        <div class="">
-          <ul
-            class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
-          >
-            <li
-              class="mb-10 border-b w-full md:w-fit text-center md:text-left border-slate-300 pb-2"
-            >
-              <a href="#">Pages</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Home</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Services</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">About</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Jobs</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Contact</a>
-            </li>
-
-            <button
-              class="py-2.5 px-8 border-2 rounded-3xl hover:-translate-y-1 bg-[#2e3336] text-white w-fit transition-all shadow-xl text-base hover:border-[transparent] hover:shadow-[#2e3336]/30"
-            >
-              <a href="https://www.icodethis.com/Ansarullah">More Templates</a>
-            </button>
-          </ul>
-        </div>
-        <div>
-          <ul
-            class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
-          >
-            <li
-              class="mb-10 border-b border-slate-300 pb-2 w-full md:w-fit text-center md:text-left"
-            >
-              <a href="#" class="uppercase">Cms</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Work</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Work Single</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Blog</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Blob Post</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Shop</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Shop Single</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul
-            class="flex flex-col gap-3 items-center md:items-start lg:gap-6 font-medium text-slate-500 text-lg md:text-xl"
-          >
-            <li
-              class="mb-10 border-b border-slate-300 pb-2 w-full md:w-fit text-center md:text-left"
-            >
-              <a href="#" class="uppercase">Utility Pages</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">404 Error page</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Passport Protected</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Styleguide</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Licensing</a>
-            </li>
-            <li
-              class="border-b border-transparent hover:border-slate-300 w-fit transition-all"
-            >
-              <a href="#">Changelog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="mt-12 border-t border-slate-300 flex flex-col gap-6 md:flex-row items-center justify-between pt-12 pb-16"
-      >
-        <div class="text-slate-500 text-center md:text-left">
-          &copy;2023 Made by
-          <a
-            href="https://twitter.com/AnsarullahSadat"
-            class="text-black border-b border-black hover:border-transparent"
-            >Ansarullah</a
-          >
-          Powored by
-          <a
-            href="#"
-            class="text-black border-b border-black hover:border-transparent"
-            >Webflow</a
-          >
-        </div>
-        <div class="flex items-center gap-4 text-slate-500">
-          <a href="#" class="hover:-translate-y-0.5 transition-all">Privacy</a>
-          <a href="#" class="hover:-translate-y-0.5 transition-all">Imprint</a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- end -->
     <div
-      class="fixed top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 bg-white p-10 sm:p-20 text-xl hidden"
+      class="fixed top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 bg-white px-12 w-full py-12 text-xl hidden justify-center"
       id="model"
     >
       <ul
